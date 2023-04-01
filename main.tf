@@ -57,4 +57,6 @@ resource "aws_security_group" "rds" {
   
 }
   
- 
+ output rds{
+   value = aws_rds_cluster.rds
+ }
